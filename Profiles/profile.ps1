@@ -1,0 +1,7 @@
+New-Alias -Name code -Value '/usr/local/bin/code'
+#Begin Azure PowerShell alias import
+Import-Module Az.Profile -ErrorAction SilentlyContinue -ErrorVariable importError
+if ($importerror.Count -eq 0) { 
+    Enable-AzureRmAlias -Module Az.RecoveryServices, Az.ManagedServiceIdentity, Az.ApplicationInsights, Az.Compute.ManagedService, Az.Billing, Az.ContainerInstance, Az.Reservations, Az.Scheduler, Az.DataFactories, Az.SignalR, Az.Tags, Az.Automation, Az.MachineLearning, Az.DataLakeStore, Az.HDInsight, Az.ServiceBus, Az.StreamAnalytics, Az.Resources, Az.ContainerRegistry, Az.DataFactoryV2, Az.ResourceGraph, Az.PolicyInsights, Az.Cdn, Az.RedisCache, Az.Relay, Az.RecoveryServices.Backup, Az.AnalysisServices, Az.IotHub, Az.Subscription, Az.Websites, Az.Maps, Az.LogicApp, Az.Dns, Az.Profile, Az.CognitiveServices, Az.DeviceProvisioningServices, Az.Insights, Az.Sql, Az.ManagementPartner, Az.Aks, Az.DevSpaces, Az.Batch, Az.Search, Az.MachineLearningCompute, Az.KeyVault, Az.Backup, Az.TrafficManager, Az.Storage, Az.StorageSync, Az.UsageAggregates, Az.Media, Az.ServiceFabric, Az.PowerBIEmbedded, Az.Compute, Az.EventHub, Az.Consumption, Az.ApiManagement, Az.OperationalInsights, Az.MarketplaceOrdering, Az.RecoveryServices.SiteRecovery, Az.Network, Az.DataLakeAnalytics, Az.Security, Az.EventGrid, Az.DataMigration, Az.NotificationHubs -ErrorAction SilentlyContinue; 
+}
+#End Azure PowerShell alias import
