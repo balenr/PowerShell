@@ -1,1 +1,0 @@
-if (Test-Path -Path $env:HOME/.config/powershell/user_profile.ps1) { . $env:HOME/.config/powershell/user_profile.ps1 }
